@@ -1,0 +1,1 @@
+import{i as t}from"./notif-Ca_8-ZkB.js";import{am as s}from"./index-Bl2lQPd7.js";document.addEventListener("deviceready",()=>{t(e=>{console.log("New background FCM message: ",e),e.epdata?s(JSON.parse(e.epdata)):s(e.epdata,!0)},e=>{console.log("New foreground FCM message: ",e),s(e.epdata,!0)})},!1);

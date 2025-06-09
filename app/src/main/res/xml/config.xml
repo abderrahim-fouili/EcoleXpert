@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:isdwta="http://www.w3.org/ns/widgets" id="com.ecoleplus.app" version="2.0.47">
+    <feature name="QRScanner">
+        <param name="android-package" value="com.bitpay.cordova.qrscanner.QRScanner"/>
+    </feature>
+    <feature name="FirebaseMessaging">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser"/>
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation"/>
+    </feature>
+    <feature name="FirebaseCrash">
+        <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseCrashPlugin"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils"/>
+        <param name="onload" value="true"/>
+    </feature>
+    <allow-navigation href="cdvfile:*"/>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing"/>
+    </feature>
+    <feature name="AppCrash">
+        <param name="android-package" value="com.appcrash.plugin.AppCrash"/>
+    </feature>
+    <name>EcolePlus
+    </name>
+    <description>EcolePlus App
+    </description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org"> EcolePlus Team 
+    </author>
+    <content src="index.html"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-navigation href="about:*"/>
+    <allow-navigation href="https://*youtube.com/*"/>
+    <icon density="ldpi" src="res/android/ldpi.png"/>
+    <icon density="mdpi" src="res/android/mdpi.png"/>
+    <icon density="hdpi" src="res/android/hdpi.png"/>
+    <icon density="xhdpi" src="res/android/xhdpi.png"/>
+    <icon density="xxhdpi" src="res/android/xxhdpi.png"/>
+    <icon density="xxxhdpi" src="res/android/xxxhdpi.png"/>
+    <preference name="loglevel" value="DEBUG"/>
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="AndroidXEnabled" value="true"/>
+    <preference name="GradlePluginGoogleServicesEnabled" value="true"/>
+    <preference name="GradlePluginGoogleServicesVersion" value="4.4.0"/>
+    <preference name="SplashMaintainAspectRatio" value="true"/>
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/splash.png"/>
+    <preference name="AndroidWindowSplashScreenBackground" value="#113e7f"/>
+</widget>

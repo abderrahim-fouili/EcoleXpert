@@ -1,0 +1,1 @@
+import{v as o,bu as d,c0 as r,cQ as a}from"./index-Bl2lQPd7.js";const n=o({name:"QUploaderAddTrigger",setup(){const e=d(a,r);return e===r&&console.error("QUploaderAddTrigger needs to be child of QUploader"),e}});export{n as Q};

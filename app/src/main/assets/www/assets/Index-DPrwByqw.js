@@ -1,0 +1,1 @@
+import{_ as e,at as t,a4 as s,S as o,aL as c}from"./index-Bl2lQPd7.js";const n={name:"PageIndex",computed:{...t({config:"user/config"})},mounted(){this.$router.push(c(this.config))}},a={class:"flex flex-center"};function r(i,d,f,p,_,u){return o(),s("div",a)}const l=e(n,[["render",r]]);export{l as default};

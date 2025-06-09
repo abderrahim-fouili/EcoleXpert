@@ -1,0 +1,1 @@
+import{r as e,t as n}from"./index-Bl2lQPd7.js";function a(r,t){return e(2,arguments),n(r).getTime()-n(t).getTime()}var o={ceil:Math.ceil,round:Math.round,floor:Math.floor,trunc:function(t){return t<0?Math.ceil(t):Math.floor(t)}},i="trunc";function d(r){return o[i]}export{a as d,d as g};

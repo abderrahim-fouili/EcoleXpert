@@ -1,0 +1,1 @@
+function i(s,e){cordova.plugins.firebase.messaging.requestPermission({forceShow:!0}).then(function(){console.log("You'll get foreground notifications when a push message arrives")}),cordova.plugins.firebase.messaging.onMessage(e),cordova.plugins.firebase.messaging.onBackgroundMessage(s)}function o(s){cordova.plugins.firebase.messaging.subscribe(s)}export{i,o as s};

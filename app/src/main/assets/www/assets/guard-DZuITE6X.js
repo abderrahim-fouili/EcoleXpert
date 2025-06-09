@@ -1,0 +1,1 @@
+import{n as i,o as r,p as m,l as t,q as f}from"./index-Bl2lQPd7.js";const c=i(async({app:l,router:a})=>{r(),a.beforeEach((s,p,e)=>{m.commit("setFooter",!0),s.matched.some(o=>o.meta.requiresAuth)?t.isLogged()?s.meta.hasOwnProperty("permission")?f(s.meta.permission)&&e():e():e({path:"/login"}):e()})});export{c as default};

@@ -1,0 +1,409 @@
+@import 'base.css';
+
+/* Paste the same CSS from the previous static example here */
+.invoice-container {
+    font-family: Arial, sans-serif;
+    /*max-width: 800px;*/
+    /* Approximate A4 width feel */
+    /*margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    color: #333;
+    font-size: 12px;
+    /* Base font size */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.invoice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #004098;
+    /* Blue color similar to logo */
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo-placeholder {
+    /* Replace with actual logo styling */
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #004098;
+}
+
+.logo-placeholder img {
+    display: block;
+    margin-bottom: 5px;
+    max-height: 60px;
+    /* Control logo height */
+    width: auto;
+}
+
+.school-info h1 {
+    font-size: 14px;
+    color: #004098;
+    margin: 0 0 5px 0;
+}
+
+.school-info p {
+    margin: 2px 0;
+    font-size: 11px;
+}
+
+.partner-logo-section {
+    text-align: right;
+}
+
+.etablissement-partenaire {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.aefe-logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.aefe-text {
+    font-size: 9px;
+    line-height: 1.2;
+    color: #555;
+}
+
+
+/* School Year */
+.school-year h2 {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Meta Info */
+.invoice-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.meta-left {
+    flex-basis: 50%;
+}
+
+.meta-left p {
+    margin: 5px 0;
+}
+
+.attention-to {
+    margin-top: 15px;
+}
+
+.attention-box {
+    border: 1px solid #ccc;
+    min-height: 50px;
+    /* Adjust as needed */
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    width: 80%;
+    /* Adjust width */
+    padding: 5px 10px;
+    /* Add padding */
+}
+
+.attention-box p {
+    margin: 2px 0;
+    /* Adjust spacing inside the box */
+}
+
+.meta-right {
+    flex-basis: 45%;
+    text-align: right;
+}
+
+.invoice-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.summary-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.summary-table td {
+    padding: 5px 0;
+    font-size: 11px;
+}
+
+.summary-table td.amount {
+    text-align: right;
+    padding-left: 20px;
+    /* Space between label and amount */
+}
+
+/* Items Table */
+.invoice-items {
+    margin-bottom: 30px;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.items-table th,
+.items-table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+    /* Align content top */
+}
+
+.items-table thead {
+    background-color: #f2f2f2;
+}
+
+.items-table th {
+    font-weight: bold;
+}
+
+.items-table td.amount,
+.items-table th.amount {
+    text-align: right;
+}
+
+.items-table tfoot td {
+    border: none;
+    padding-top: 10px;
+}
+
+.items-table tfoot .footer-label {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.items-table tfoot .total {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+/* Payment Details */
+.payment-details {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.payment-details h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.due-date-info {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* Space between payment method sections */
+}
+
+.method h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.method p,
+.method ul {
+    margin-bottom: 10px;
+}
+
+.method ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    /* Or keep default */
+}
+
+.method ul li {
+    margin-bottom: 5px;
+}
+
+/* Specific Method Styling */
+.method-online-box {
+    background-color: #e7f0fa;
+    /* Light blue background */
+    border: 1px solid #004098;
+    padding: 15px;
+    position: relative;
+    /* For QR code positioning */
+    padding-right: 130px;
+    /* Make space for QR code */
+    min-height: 120px;
+    /* Ensure enough height for QR */
+}
+
+.method-online-box p,
+.method-online-box ul {
+    color: #004098;
+    margin-bottom: 8px;
+}
+
+.method-online-box ul {
+    padding-left: 15px;
+    list-style-type: '- ';
+}
+
+.method-online-box a {
+    color: #004098;
+    word-break: break-all;
+}
+
+.qr-code-placeholder {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 100px;
+    /* Match image size */
+    height: 100px;
+    /* Match image size */
+    border: 1px dashed #ccc;
+    /* Optional: visual guide for placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.qr-code-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bank-details {
+    margin-top: 15px;
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.bank-details p {
+    margin: 4px 0;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Helper Classes */
+.amount {
+    text-align: right;
+    white-space: nowrap;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        /* Chrome, Safari */
+        color-adjust: exact;
+        /* Firefox */
+        padding: 0;
+        margin: 0;
+    }
+
+    .invoice-container {
+        overflow: hidden;
+        max-width: 800px;
+        width: 100%;
+        margin: 0;
+        /*padding: 5mm;*/
+        /* Small margin for print */
+        border: none;
+        box-shadow: none;
+        font-size: 10pt;
+        /* Adjust print font size if needed */
+    }
+
+    .invoice-header {
+        border-bottom: 2px solid #004098;
+        /* Ensure colors print */
+        page-break-inside: avoid;
+    }
+
+    .invoice-meta,
+    .invoice-items,
+    .payment-details {
+        page-break-inside: avoid;
+        border: none;
+        box-shadow: none;
+        /* Try to keep sections together */
+    }
+
+    .method-online-box {
+        background-color: #e7f0fa !important;
+        /* Ensure background prints */
+        border: 1px solid #004098 !important;
+        page-break-inside: avoid;
+    }
+
+    .method-online-box p,
+    .method-online-box ul,
+    .method-online-box a {
+        color: #004098 !important;
+    }
+
+    .items-table thead {
+        background-color: #f2f2f2 !important;
+        display: table-header-group;
+        /* Helps repeat header on page break */
+    }
+
+    .items-table tfoot {
+        display: table-footer-group;
+        /* Might help keep footer with table */
+    }
+
+    .items-table tr {
+        page-break-inside: avoid;
+        /* Avoid breaking rows */
+    }
+
+    .qr-code-placeholder img {
+        max-width: 80px;
+        /* Slightly smaller for print maybe */
+        max-height: 80px;
+    }
+
+    /* Add any elements you want to hide during print */
+    .no-print {
+        display: none;
+    }
+}
